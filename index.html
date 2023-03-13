@@ -90,5 +90,83 @@
         </tr>
       </tbody>
     </table>
+    <hr />
+    <form action="/" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+        <div>
+          <label for="name">Name</label><br />
+          <input
+                  required
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input required id="email" type="email" name="email" />
+        </div>
+        <div>
+          <label for="password">Password</label><br />
+          <input required id="password" type="password" name="password" />
+        </div>
+        <div>
+          <label for="programming">Your programming level?</label><br />
+          <input
+                  id="programming"
+                  type="range"
+                  name="programming"
+                  min="0"
+                  max="10"
+                  value="5"
+          />
+        </div>
+        <div>
+          <p>What does HTML stand of?</p>
+          <input id="html-1" type="checkbox" name="html" value="1" />
+          <label for="html-1">Hyperlinks and Text Markup Language</label><br />
+          <input id="html-2" type="checkbox" name="html" value="2" />
+          <label for="html-2">Home Tool Markup Language</label><br />
+          <input id="html-3" type="checkbox" name="html" value="3" />
+          <label for="html-3">Hyper Text Markup Language</label><br />
+        </div>
+        <div>
+          <p>What does HTTP stand of?</p>
+          <input id="http-1" type="radio" name="http" value="1" />
+          <label for="http-1">Hyper Text Translate Protocol</label><br />
+          <input id="http-2" type="radio" name="http" value="2" />
+          <label for="http-2">Hyper Text Transmission Protocol</label><br />
+          <input id="http-3" type="radio" name="http" value="3" />
+          <label for="http-3">Hyper Text Transfer Protocol</label><br />
+        </div>
+        <div>
+          <label for="comment">Comment</label><br />
+          <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="comment"
+                  maxlength="500"
+          ></textarea>
+        </div>
+        <div>
+          <label for="html_is">What does HTML stand of?</label><br />
+          <select name="html_is" id="html_is">
+            <option disabled selected>Your answer</option>
+            <option value="1">
+              is the main markup language for creating web pages and other
+              information that can be displayed in a web browser.
+            </option>
+            <option value="2">
+              is the main programming language for creating web pages and other
+              information that can be displayed in a web browser.
+            </option>
+          </select>
+        </div>
+        <br />
+        <button>Send</button>
+      </fieldset>
+    </form>
   </body>
 </html>
